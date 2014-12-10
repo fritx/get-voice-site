@@ -9,6 +9,9 @@
   ],
   "repository": "git@github.com:fritx/get-voice-site.git",
   "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
   "dependencies": {
     "express": "^4.10.4",
     "get-voice": "0.0.2"

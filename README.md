@@ -4,19 +4,27 @@ Get human voice with http request
 
 Based on [fritx/get-voice](https://github.com/fritx/get-voice)
 
+Current demo: <http://voice.coding.io?q=check-it-out>
+
 ## API
 
+`GET {site}/?q=we-will-rock`
+
+Or: `GET {site}/?q=we will rock`
+
+Or just safer: `GET {site}/?q=we%20will%20rock`
+
 ```html
-<audio type="audio/mp3" src="{get-voice-site}/?q=BlaBlaBla"></audio>
+<audio controls type="audio/mp3" src="{site}/?q=bazinga"></audio>
 ```
 
-Or:
+Or with more fun:
 
 ```js
 function say(text){
   var query = encodeURIComponent(text)
-  $('<audio type="audio/mp3" autoplay>')
-    .attr('src', '{get-voice-site}/?q=' + query)
+  $('<audio autoplay type="audio/mp3">')
+    .attr('src', '{site}/?q=' + query)
     .on('ended', function(){
       $(this).remove()
     })

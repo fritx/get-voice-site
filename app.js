@@ -14,5 +14,5 @@ app.get('/', function(req, res){
 
 
 if (!module.parent) {
-  app.listen(3061)
+  app.listen(process.env.PORT || 3000)
 }
