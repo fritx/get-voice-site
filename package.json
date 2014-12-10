@@ -1,0 +1,16 @@
+{
+  "name": "get-voice-site",
+  "version": "0.0.1",
+  "description": "Get human voice with http request",
+  "keywords": [
+    "voice",
+    "human",
+    "mp3"
+  ],
+  "repository": "git@github.com:fritx/get-voice-site.git",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.10.4",
+    "get-voice": "0.0.2"
+  }
+}
